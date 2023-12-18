@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55263E0D-1E0C-4705-ACC3-777E64CC026B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ungdunghoctumoi</RootNamespace>
+    <AssemblyName>ungdunghoctumoi</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DanhSachUser.cs" />
+    <Compile Include="fm_DKTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm_DKTK.Designer.cs">
+      <DependentUpon>fm_DKTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Flashcard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Flashcard.Designer.cs">
+      <DependentUpon>Fm_Flashcard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Login.Designer.cs">
+      <DependentUpon>Fm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HieuUng.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextBoxThuaKe.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxThuaKe.Designer.cs">
+      <DependentUpon>TextBoxThuaKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcCacNuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcCacNuoc.Designer.cs">
+      <DependentUpon>UcCacNuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcMauSac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcMauSac.Designer.cs">
+      <DependentUpon>UcMauSac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcNN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcNN.Designer.cs">
+      <DependentUpon>UcNN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcNoiThat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcNoiThat.Designer.cs">
+      <DependentUpon>UcNoiThat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcPTGT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcPTGT.Designer.cs">
+      <DependentUpon>UcPTGT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcTraiCay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcTraiCay.Designer.cs">
+      <DependentUpon>UcTraiCay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="UserCDongVat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCDongVat.Designer.cs">
+      <DependentUpon>UserCDongVat.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fm_DKTK.resx">
+      <DependentUpon>fm_DKTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Flashcard.resx">
+      <DependentUpon>Fm_Flashcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Login.resx">
+      <DependentUpon>Fm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UcCacNuoc.resx">
+      <DependentUpon>UcCacNuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcMauSac.resx">
+      <DependentUpon>UcMauSac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcNN.resx">
+      <DependentUpon>UcNN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcNoiThat.resx">
+      <DependentUpon>UcNoiThat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcPTGT.resx">
+      <DependentUpon>UcPTGT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcTraiCay.resx">
+      <DependentUpon>UcTraiCay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCDongVat.resx">
+      <DependentUpon>UserCDongVat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giai-dap-thac-mac-ve-qua-tang-doanh-nghiep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\756687.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-start-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design-concept-of-word-english-website-banner-TC9H2Y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vocabulary 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phien-dich-tieng-anh-thuong-mai-cdsg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnc-machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5180a02d4e4739da16ed4d7bc092284ccc725116.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kham-Pha-Tac-Dung-Ch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hai-mat-cua-qua-xoai-doi-voi-suc-khoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dao_2_resize.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20220110_102717_328607_qua-anh-dao-co-tac-.max-1800x1800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5180a02d4e4739da16ed4d7bc092284ccc7251161.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kham-Pha-Tac-Dung-Ch1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hai-mat-cua-qua-xoai-doi-voi-suc-khoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dao_2_resize1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-loi-ich-bat-ngo-cua-trai-kiwi-202110211628557582.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25117_traile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-meo-xu-ly-giup-man-an-phuoc-ra-hoa-trai-vu-hieu-qua-202204220550250547-min.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qua-sung-nhung-tac-dung-tuyet-voi-doi-voi-suc-khoe-va-lam-dep-an-qua-sung-co-tot-cho-suc-khoe-khong-va-ai-khong--1555738681-781-width600height450.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mau-xanh-duong-tan-nuoc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95763.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mau-hong-didongviet-14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mau-trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mau-xam-la-gi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhu-bac-600x600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-grain-dark-red-particle-background-material-red-particlesparticle-background-image_86098.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-chibi-doctor-kids-cute-boy-png-image_6288993.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-cartoon-female-teacher-blackboard-image_1320753.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-nurse-cute-cartoon-chibi-png-image_3814700.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3fd9d8dd61536c6a3d2c0a58dd5fa197.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-idol-singer-music-illustration-image_1430773.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cute-character-illustration-of-photographer-png-image_8950326.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cute-architect-cartoon-character-png-image_2089968.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-plumber-icon-cartoon-style-png-image_1923919.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-chef-hold-dish-png_244026.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-chibi-fashion-designer-kids-cute-boy-png-image_6289018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_of_Canada_%28Pantone%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\la-co-nuoc-duc1-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_of_France.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_of_Italy.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_of_Japan.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_of_the_People%27s_Republic_of_China.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-967321166-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2560px-Flag_of_Argentina_%283-2%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_of_Egypt.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_of_Greece.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fb8ade621f18844a8f18f3ada3c1f71f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabouretAFDB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-loai-ghe-sofa-de-dang-phu-hop-voi-bat-ky-khong-gian-nao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140120140954-15a-internet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ban-lam-viec-AT100SHL3D.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RD-RL-26.LED-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghe-go-dai-hinh-33_be8648e541644cbf99b4c45c9aab19b4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ke-go-trang-tri-treo-tuong-2-ngan-bo-2-cai-ktt-01210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghe-sofa-vang-khong-tua-amb-125-10-800x800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cute-car-png-image_8881945.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-hand-drawn-big-car-blue-bus-illustration-bus-passenger-car-png-image_454311.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-hand-drawn-bicycle-cartoon-simple-cartoon-cute-bicycle-anime-image-cute-png-image_371294.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-train-rail-transport-clip-art-image-transportation-google-books-free-clipart-clipart-f-5c892a18e59666.2754872215524930809404.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhungchiecxemayhuyenthoai4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-truck-icon-png-image_3782904.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phà_Thủ_Thiêm_A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taxi-da-nang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-blue-pickup-car-illustration-image_1409628.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taxi-da-nang1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O1CN01C34O5M1jLFFYCUXoO_2054704531-0-cib-300x300.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
